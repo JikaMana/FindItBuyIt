@@ -35,7 +35,7 @@ const SAMPLE_STORES = [
     ],
   },
   {
-    id: "2",
+    id: "3",
     name: "Jabi Lake Mall(Shoprite) - Abuja",
     image: jabiLakeMall,
     rating: 4.3,

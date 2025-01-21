@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import {
   Home,
   Store,
@@ -21,7 +21,27 @@ const NAV_ITEMS = [
 ];
 
 export function Navigation() {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState("Home");
+  const location = useLocation();
+
+  const getCurrentPage = () => {
+    switch (location.pathname) {
+      case "/":
+        return "home";
+      case "/stores":
+        return "stores";
+      case "/categories":
+        return "categories";
+      case "/deals":
+        return "deals";
+      default:
+        break;
+    }
+  };
+
+  getCurrentPage();
+  // alert(getCurrentPage());
 
   return (
     <nav className="bg-white shadow-sm">
@@ -33,7 +53,11 @@ export function Navigation() {
               <Link
                 key={item.path}
                 to={item.path}
-                className="flex items-center text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium"
+                className={`flex items-center text-gray-700 px-3 py-2 text-sm font-medium  hover:text-green-600 ${
+                  getCurrentPage() === item.label.toLowerCase()
+                    ? "text-green-600"
+                    : ""
+                }`}
               >
                 <item.icon className="w-5 h-5 mr-2" />
                 {item.label}

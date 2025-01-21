@@ -67,7 +67,7 @@ export function Layout({ children }) {
       {/* Footer */}
       <footer className="bg-white mt-16 border-t border-gray-200">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 place-items-center">
             <div>
               <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">
                 About
@@ -115,7 +115,11 @@ export function Layout({ children }) {
               </ul>
             </div>
             <div className="place-self-end">
-              <img src={Logo} alt="Logo" className=" h-24" />
+              <img
+                src={Logo}
+                alt="Logo"
+                className="h-32 bg-gray-100 rounded-full p-1"
+              />
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-200">
