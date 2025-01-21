@@ -35,7 +35,8 @@ const SAMPLE_STORES = [
 ];
 
 export function StoresPage() {
-  const [view, setView] = (React.useState < "grid") | ("list" > "grid");
+  // const [view, setView] = (React.useState < "grid") | ("list" > "grid");
+  // const [view, setView] = React.useState("grid");
 
   return (
     <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -46,7 +47,20 @@ export function StoresPage() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {SAMPLE_STORES.map((store) => (
-            <StoreCard key={store.id} store={store} />
+            <StoreCard
+              key={store.id}
+              id
+              name
+              image
+              rating
+              reviews
+              address
+              distance
+              hours
+              featured
+              featuredName={store.featured.name}
+              featuredPrice={store.featured.price}
+            />
           ))}
         </div>
       </div>

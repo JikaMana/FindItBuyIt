@@ -12,6 +12,8 @@ export function StoreCard({
   distance,
   hours,
   featured,
+  featuredName,
+  featuredPrice,
 }) {
   return (
     <Link
@@ -53,8 +55,8 @@ export function StoreCard({
             <div className="space-y-2">
               {featured.map((product, index) => (
                 <div key={index} className="flex justify-between items-center">
-                  <span className="text-sm text-gray-600">{product.name}</span>
-                  <span className="text-sm font-medium">₦{product.price}</span>
+                  <span className="text-sm text-gray-600">{featuredName}</span>
+                  <span className="text-sm font-medium">₦{featuredPrice}</span>
                 </div>
               ))}
             </div>
