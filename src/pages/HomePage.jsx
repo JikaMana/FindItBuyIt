@@ -1,13 +1,48 @@
 import React from "react";
 import { Search, MapPin, TrendingUp, Store } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroBanner from "../../pubic//images/herobanner.webp";
+import heroBanner from "/images/herobanner.webp";
+import dellLaptop from "../images/products/dell-xps-15.png";
+import samsungTV from "../images/products/samsung-tv.png";
+import nikeAirmax from "../images/products/nike-airmax-270.png";
+import iphone16pro from "../images/products/iphone16pro.png";
 
 const FEATURED_STORES = [
   { name: "Shoprite", location: "Lekki, Lagos" },
   { name: "SPAR", location: "Victoria Island, Lagos" },
   { name: "Next Cash and Carry", location: "Jabi, Abuja" },
   { name: "Market Square", location: "Port Harcourt" },
+];
+
+const FEATURED_PRODUCTS = [
+  {
+    id: "1001-A14PRO",
+    name: "Apple iPhone 16 Pro",
+    availableStores: "Slot System Limited and SPAR Nigeria",
+    nearestDistance: "3.5 km",
+    image: iphone16pro,
+  },
+  {
+    id: "2002-S55QLED",
+    name: 'Samsung 55" QLED Smart TV',
+    availableStores: "Next Cash and Carry and Shoprite",
+    nearestDistance: "2.0 km",
+    image: samsungTV,
+  },
+  {
+    id: "3003-AM270",
+    name: "Nike Air Max 270",
+    availableStores: "Shoprite and SPAR Nigeria",
+    nearestDistance: "1.8 km",
+    image: nikeAirmax,
+  },
+  {
+    id: "4004-DXPS15",
+    name: "Dell XPS 15 Laptop",
+    availableStores: "Next Cash and Carry",
+    nearestDistance: "4.0 km",
+    image: dellLaptop,
+  },
 ];
 
 export function HomePage() {
@@ -24,10 +59,10 @@ export function HomePage() {
         </div>
         <div className="relative max-w-3xl mx-auto text-center px-4">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-8">
-            Find Products in Nigerian Supermarkets
+            Find Products in Supermarkets Near you
           </h1>
           <p className="text-xl text-green-100 mb-8">
-            Locate items in stores across Lagos, Abuja, and Port Harcourt
+            Locate items in stores across your city
           </p>
           <div className="max-w-2xl mx-auto">
             <div className="relative">
@@ -113,32 +148,27 @@ export function HomePage() {
             <TrendingUp className="w-6 h-6 text-green-600" />
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[1, 2, 3, 4].map((i) => (
+            {FEATURED_PRODUCTS.map((product) => (
               <Link
-                key={i}
-                to={`/product/${i}`}
+                key={product.id}
+                to={`/product/${product.id}`}
                 className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
               >
                 <img
-                  // src={`https://images.unsplash.com/photo-${
-                  //   i + 500
-                  // }?auto=format&fit=crop&w=500`}
-                  src={`https://images.unsplash.com/photo-${
-                    i + 500
-                  }?auto=format&fit=crop&w=500`}
+                  src={product.image}
                   alt="Product"
                   className="w-full h-48 object-cover rounded-t-lg"
                 />
                 <div className="p-4">
                   <h3 className="font-semibold text-gray-900 mb-1">
-                    Product Name
+                    {product.name}
                   </h3>
                   <p className="text-sm text-gray-600 mb-2">
-                    Available at SPAR and Shoprite
+                    Available at {product.availableStores}
                   </p>
                   <div className="flex items-center text-sm text-green-600">
                     <MapPin className="w-4 h-4 mr-1" />
-                    <span>2.5 km away</span>
+                    <span>{product.nearestDistance} away</span>
                   </div>
                 </div>
               </Link>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Search, ShoppingBag, User, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
+import Logo from "/images/FindItBuyItLogo.png";
 
 export function Layout({ children }) {
   return (
@@ -112,6 +113,9 @@ export function Layout({ children }) {
                   </a>
                 </li>
               </ul>
+            </div>
+            <div className="place-self-end">
+              <img src={Logo} alt="Logo" className=" h-24" />
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-200">

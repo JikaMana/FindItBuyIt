@@ -1,12 +1,15 @@
 import React from "react";
 import { LocationSelector } from "../components/LocationSelector";
 import { StoreCard } from "../components/StoreCard";
+import sparLekki from "../images/stores/spar-lekki.png";
+import nextCashAndCarry from "../images/stores/next-ph.png";
+import jabiLakeMall from "../images/stores/jabi-lake-mall.png";
 
 const SAMPLE_STORES = [
   {
     id: "1",
     name: "SPAR - Lekki",
-    image: "https://images.unsplash.com/photo-1534723452862-4c874018d66d",
+    image: sparLekki,
     rating: 4.5,
     reviews: 128,
     address: "Circle Mall, Lekki-Epe Expressway, Lagos",
@@ -19,11 +22,11 @@ const SAMPLE_STORES = [
   },
   {
     id: "2",
-    name: "Shoprite - Ikeja City Mall",
-    image: "https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0",
+    name: "Next Cash and Carry - Port Harcourt",
+    image: nextCashAndCarry,
     rating: 4.3,
     reviews: 256,
-    address: "Alausa, Ikeja, Lagos",
+    address: "Trans Amadi, Port Harcourt, Rivers State",
     distance: "5.2 km",
     hours: "Open until 10 PM",
     featured: [
@@ -31,7 +34,20 @@ const SAMPLE_STORES = [
       { name: "Power Oil", price: "3,200" },
     ],
   },
-  // Add more stores as needed
+  {
+    id: "2",
+    name: "Jabi Lake Mall(Shoprite) - Abuja",
+    image: jabiLakeMall,
+    rating: 4.3,
+    reviews: 256,
+    address: "Jabi, Abuja",
+    distance: "4.1 km",
+    hours: "Open until 11 PM",
+    featured: [
+      { name: "Iphone 16 pro man", price: "4,200,500" },
+      { name: "Macbook pro", price: "1,200,00" },
+    ],
+  },
 ];
 
 export function StoresPage() {
@@ -49,17 +65,15 @@ export function StoresPage() {
           {SAMPLE_STORES.map((store) => (
             <StoreCard
               key={store.id}
-              id
-              name
-              image
-              rating
-              reviews
-              address
-              distance
-              hours
-              featured
-              featuredName={store.featured.name}
-              featuredPrice={store.featured.price}
+              id={store.id}
+              name={store.name}
+              image={store.image}
+              rating={store.rating}
+              reviews={store.reviews}
+              address={store.address}
+              distance={store.distance}
+              hours={store.hours}
+              featured={store.featured}
             />
           ))}
         </div>
