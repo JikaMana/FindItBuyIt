@@ -16,7 +16,7 @@ export function StoreCard({
   return (
     <Link
       to={`/stores/${id}`}
-      className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+      className="relative pb-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
     >
       <div className="relative h-48">
         <img
@@ -61,7 +61,7 @@ export function StoreCard({
           </div>
         )}
 
-        <div className="mt-4 flex items-center justify-between text-green-600 hover:text-green-500">
+        <div className="absolute bottom-4 mt-4 flex items-center justify-between text-green-600 hover:text-green-500">
           <span className="text-sm font-medium">View Store</span>
           <ChevronRight className="w-5 h-5" />
         </div>

@@ -26,17 +26,17 @@ export function Navigation() {
   const location = useLocation();
 
   const getCurrentPage = () => {
-    switch (location.pathname) {
-      case "/":
-        return "home";
-      case "/stores":
+    switch (true) {
+      case location.pathname.startsWith("/stores"):
         return "stores";
-      case "/categories":
+      case location.pathname.startsWith("/categories"):
         return "categories";
-      case "/deals":
+      case location.pathname.startsWith("/deals"):
         return "deals";
+      case location.pathname === "/":
+        return "home";
       default:
-        break;
+        return "unknown";
     }
   };
 
