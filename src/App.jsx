@@ -8,6 +8,7 @@ import { ProductDetails } from "./pages/ProductDetails";
 import { UserProfile } from "./pages/UserProfile";
 import { StoresPage } from "./pages/StoresPage";
 import useProducts from "./hooks/useProducts";
+import { StoreDetailsPage } from "./pages/StoreDetails";
 // import { CategoriesPage } from './pages/CategoriesPage';
 // import { DealsPage } from './pages/DealsPage';
 // import { CartPage } from './pages/CartPage';
@@ -37,6 +38,7 @@ function App() {
           />
           <Route path="/profile" element={<UserProfile />} />
           <Route path="/stores" element={<StoresPage />} />
+          <Route path="/stores/:id" element={<StoreDetailsPage />} />
         </Routes>
       </Layout>
     </Router>
