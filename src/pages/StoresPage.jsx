@@ -41,6 +41,19 @@ const SAMPLE_STORES = [
   },
   {
     id: "3",
+    name: "ABUAD MALL - Ekiti",
+    initial: "abuad-mall",
+
+    image: abuadMall,
+    rating: 3.8,
+    reviews: 97,
+    address: "Igbodogi, Ado-Ekiti, Delta",
+    distance: "0.6 km",
+    hours: "Open until 10 PM",
+    featured: [{ name: "Nivea Creme", price: "2,500" }],
+  },
+  {
+    id: "4",
     name: "Jabi Lake Mall(Shoprite) - Abuja",
     initial: "jabi-lake-mall",
     image: jabiLakeMall,
@@ -55,7 +68,7 @@ const SAMPLE_STORES = [
     ],
   },
   {
-    id: "4",
+    id: "5",
     name: "Shoprite - Delta",
     initial: "shoprite-warri",
     image: shopriteWarri,
@@ -70,7 +83,7 @@ const SAMPLE_STORES = [
     ],
   },
   {
-    id: "5",
+    id: "6",
     name: "Market Square - Port Harcourt",
     initial: "market-square-ph-gra",
     image: marketSquare,
@@ -83,19 +96,6 @@ const SAMPLE_STORES = [
       { name: "Bread", price: "2,200" },
       { name: "Fanice Ice Cream", price: "2,600" },
     ],
-  },
-  {
-    id: "6",
-    name: "ABUAD MALL - Ekiti",
-    initial: "abuad-mall",
-
-    image: abuadMall,
-    rating: 3.8,
-    reviews: 97,
-    address: "Igbodogi, Ado-Ekiti, Delta",
-    distance: "0.6 km",
-    hours: "Open until 10 PM",
-    featured: [{ name: "Nivea Creme", price: "2,500" }],
   },
 ];
 export function StoresPage() {
