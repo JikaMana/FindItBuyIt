@@ -79,14 +79,7 @@ export function Navigation() {
             >
               <Heart className="w-6 h-6" />
             </Link>
-            <Link
-              to="/profile"
-              className={`flex items-center text-gray-700 hover:text-green-600 ${
-                getCurrentPage() === "profile" ? "text-green-600" : ""
-              }`}
-            >
-              <User className="w-6 h-6" />
-            </Link>
+
             <Link
               to="/help"
               className={`flex items-center text-gray-700 hover:text-green-600 ${
