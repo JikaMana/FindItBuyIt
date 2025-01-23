@@ -7,20 +7,34 @@ import { SearchResults } from "./pages/SearchResults";
 import { ProductDetails } from "./pages/ProductDetails";
 import { UserProfile } from "./pages/UserProfile";
 import { StoresPage } from "./pages/StoresPage";
+import useProducts from "./hooks/useProducts";
 // import { CategoriesPage } from './pages/CategoriesPage';
 // import { DealsPage } from './pages/DealsPage';
 // import { CartPage } from './pages/CartPage';
 // import { HelpPage } from './pages/HelpPage';
 
 function App() {
+  const { allProducts, featuredProducts, loading, error } = useProducts();
+
   return (
     <Router>
       <Layout children={undefined}>
         <Navigation />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route
+            path="/"
+            element={<HomePage featuredProducts={featuredProducts} />}
+          />
           <Route path="/search" element={<SearchResults />} />
-          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route
+            path="/product/:id"
+            element={
+              <ProductDetails
+                featuredProducts={featuredProducts}
+                allProducts={allProducts}
+              />
+            }
+          />
           <Route path="/profile" element={<UserProfile />} />
           <Route path="/stores" element={<StoresPage />} />
         </Routes>

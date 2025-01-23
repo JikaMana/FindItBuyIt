@@ -6,11 +6,13 @@ import nextCashAndCarry from "../images/stores/next-ph.png";
 import jabiLakeMall from "../images/stores/jabi-lake-mall.png";
 import shopriteWarri from "../images/stores/shoprite-warri.png";
 import abuadMall from "../images/stores/abuad-shopping-mall.png";
+import marketSquare from "../images/stores/market-square.png";
 
 const SAMPLE_STORES = [
   {
     id: "1",
     name: "SPAR - Lekki",
+    initial: "spar-lekki",
     image: sparLekki,
     rating: 4.7,
     reviews: 1679,
@@ -25,6 +27,7 @@ const SAMPLE_STORES = [
   {
     id: "2",
     name: "Next Cash and Carry - Port Harcourt",
+    initial: "next-ph",
     image: nextCashAndCarry,
     rating: 4.8,
     reviews: 895,
@@ -39,6 +42,7 @@ const SAMPLE_STORES = [
   {
     id: "3",
     name: "Jabi Lake Mall(Shoprite) - Abuja",
+    initial: "jabi-lake-mall",
     image: jabiLakeMall,
     rating: 4.9,
     reviews: 1007,
@@ -53,6 +57,7 @@ const SAMPLE_STORES = [
   {
     id: "4",
     name: "Shoprite - Delta",
+    initial: "shoprite-warri",
     image: shopriteWarri,
     rating: 4.3,
     reviews: 429,
@@ -66,7 +71,24 @@ const SAMPLE_STORES = [
   },
   {
     id: "5",
+    name: "Market Square - Port Harcourt",
+    initial: "market-square-ph-gra",
+    image: marketSquare,
+    rating: 4.3,
+    reviews: 240,
+    address: "Trans Amadi, Port Harcourt, Rivers State",
+    distance: "5.5 km",
+    hours: "Open until 12 AM",
+    featured: [
+      { name: "Bread", price: "2,200" },
+      { name: "Fanice Ice Cream", price: "2,600" },
+    ],
+  },
+  {
+    id: "6",
     name: "ABUAD MALL - Ekiti",
+    initial: "abuad-mall",
+
     image: abuadMall,
     rating: 3.8,
     reviews: 97,

@@ -2,50 +2,22 @@ import React from "react";
 import { Search, MapPin, TrendingUp, Store } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroBanner from "/images/herobanner.webp";
-import dellLaptop from "../images/products/dell-xps-15.png";
-import samsungTV from "../images/products/samsung-tv.png";
-import nikeAirmax from "../images/products/nike-airmax-270.png";
-import iphone16pro from "../images/products/iphone16pro.png";
+// import dellLaptop from "../images/products/dell-xps-15.png";
+// import samsungTV from "../images/products/samsung-tv.png";
+// import nikeAirmax from "../images/products/nike-airmax-270.png";
+// import iphone16pro from "../images/products/iphone16pro.png";
 
 const FEATURED_STORES = [
-  { name: "Shoprite", location: "Lekki, Lagos" },
-  { name: "SPAR", location: "Victoria Island, Lagos" },
-  { name: "Next Cash and Carry", location: "Jabi, Abuja" },
-  { name: "Market Square", location: "Port Harcourt" },
-];
-
-const FEATURED_PRODUCTS = [
+  { name: "Shoprite", initial: "shoprite" },
+  { name: "SPAR", initial: "spar" },
+  { name: "Next Cash and Carry", initial: "next" },
   {
-    id: "1001-A14PRO",
-    name: "Apple iPhone 16 Pro",
-    availableStores: "Slot System Limited and SPAR Nigeria",
-    nearestDistance: "3.5 km",
-    image: iphone16pro,
-  },
-  {
-    id: "2002-S55QLED",
-    name: 'Samsung 55" QLED Smart TV',
-    availableStores: "Next Cash and Carry and Shoprite",
-    nearestDistance: "2.0 km",
-    image: samsungTV,
-  },
-  {
-    id: "3003-AM270",
-    name: "Nike Air Max 270",
-    availableStores: "Shoprite and SPAR Nigeria",
-    nearestDistance: "1.8 km",
-    image: nikeAirmax,
-  },
-  {
-    id: "4004-DXPS15",
-    name: "Dell XPS 15 Laptop",
-    availableStores: "Next Cash and Carry",
-    nearestDistance: "4.0 km",
-    image: dellLaptop,
+    name: "Market Square",
+    initial: "market-square",
   },
 ];
 
-export function HomePage() {
+export function HomePage({ featuredProducts }) {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
@@ -88,13 +60,17 @@ export function HomePage() {
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
             {FEATURED_STORES.map((store, index) => (
-              <div key={index} className="text-center">
+              <Link
+                to={`/store/${store.initial}`}
+                key={index}
+                className="text-center"
+              >
                 <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Store className="w-8 h-8 text-green-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{store.name}</h3>
-                <p className="text-gray-600">{store.location}</p>
-              </div>
+                {/* <p className="text-gray-600">{store.location}</p> */}
+              </Link>
             ))}
           </div>
         </div>
@@ -148,7 +124,7 @@ export function HomePage() {
             <TrendingUp className="w-6 h-6 text-green-600" />
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {FEATURED_PRODUCTS.map((product) => (
+            {featuredProducts.map((product) => (
               <Link
                 key={product.id}
                 to={`/product/${product.id}`}

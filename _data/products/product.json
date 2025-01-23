@@ -1,0 +1,484 @@
+{
+  "FEATURED_PRODUCTS": [
+    {
+      "id": "1001-A16PRO",
+      "name": "Apple iPhone 16 Pro",
+      "availableStores": "Slot System Limited and SPAR Nigeria",
+      "nearestDistance": "3.5 km",
+      "image": "/images/products/iphone16pro.jpg"
+    },
+    {
+      "id": "2002-S55QLED",
+      "name": "Samsung 55\" QLED Smart TV",
+      "availableStores": "Next Cash and Carry and Shoprite",
+      "nearestDistance": "2.0 km",
+      "image": "/images/products/samsungTV.jpg"
+    },
+    {
+      "id": "3003-AM270",
+      "name": "Nike Air Max 270",
+      "availableStores": "Shoprite and SPAR Nigeria",
+      "nearestDistance": "1.8 km",
+      "image": "/images/products/nikeAirmax270.jpg"
+    },
+    {
+      "id": "4004-DXPS15",
+      "name": "Dell XPS 15 Laptop",
+      "availableStores": "Next Cash and Carry",
+      "nearestDistance": "4.0 km",
+      "image": "/images/products/dellXPS15.jpg"
+    }
+  ],
+  "ALL_PRODUCTS": [
+    {
+      "id": "1001-A16PRO",
+      "name": "Apple iPhone 16 Pro",
+      "availableStores": "Slot System Limited, SPAR Nigeria",
+      "nearestDistance": 3.5,
+      "image": "/images/products/iphone16pro.jpg",
+      "category": "Electronics",
+      "price": 950000
+    },
+    {
+      "id": "2002-S55QLED",
+      "name": "Samsung 55\" QLED Smart TV",
+      "availableStores": "Next Cash and Carry, Shoprite",
+      "nearestDistance": 2.0,
+      "image": "/images/products/samsungTV.jpg",
+      "category": "Electronics",
+      "price": 750000
+    },
+    {
+      "id": "3003-AM270",
+      "name": "Nike Air Max 270",
+      "availableStores": "Shoprite, SPAR Nigeria",
+      "nearestDistance": 1.8,
+      "image": "/images/products/nikeAirmax270.jpg",
+      "category": "Fashion",
+      "price": 70000
+    },
+    {
+      "id": "4004-DXPS15",
+      "name": "Dell XPS 15 Laptop",
+      "availableStores": "Next Cash and Carry",
+      "nearestDistance": 4.0,
+      "image": "/images/products/dellXPS15.jpg",
+      "category": "Computers",
+      "price": 1500000
+    },
+    {
+      "id": "5005-MBP14",
+      "name": "MacBook Pro 14-inch",
+      "availableStores": "Slot System Limited",
+      "nearestDistance": 5.0,
+      "image": "/images/products/macbookpro.jpg",
+      "category": "Computers",
+      "price": 2100000
+    },
+    {
+      "id": "6006-PXL7",
+      "name": "Google Pixel 7",
+      "availableStores": "SPAR Nigeria",
+      "nearestDistance": 3.2,
+      "image": "/images/products/googlepixel7.jpg",
+      "category": "Electronics",
+      "price": 600000
+    },
+    {
+      "id": "7007-XBX",
+      "name": "Xbox Series X",
+      "availableStores": "GameHub, Next Cash and Carry",
+      "nearestDistance": 4.8,
+      "image": "/images/products/xboxseriesx.jpg",
+      "category": "Gaming",
+      "price": 450000
+    },
+    {
+      "id": "8008-PS5",
+      "name": "Sony PlayStation 5",
+      "availableStores": "GameHub, SPAR Nigeria",
+      "nearestDistance": 5.0,
+      "image": "/images/products/playstation5.jpg",
+      "category": "Gaming",
+      "price": 480000
+    },
+    {
+      "id": "9009-HPM15",
+      "name": "HP Pavilion 15 Laptop",
+      "availableStores": "Shoprite, Slot System Limited",
+      "nearestDistance": 3.6,
+      "image": "/images/products/hppavilion15.jpg",
+      "category": "Computers",
+      "price": 550000
+    },
+    {
+      "id": "10010-GALBUD",
+      "name": "Samsung Galaxy Buds Pro",
+      "availableStores": "SPAR Nigeria",
+      "nearestDistance": 2.5,
+      "image": "/images/products/galaxybuds.jpg",
+      "category": "Accessories",
+      "price": 80000
+    },
+    {
+      "id": "11011-FITB3",
+      "name": "Fitbit Charge 5",
+      "availableStores": "Slot System Limited",
+      "nearestDistance": 3.0,
+      "image": "/images/products/fitbitcharge5.jpg",
+      "category": "Wearable Tech",
+      "price": 120000
+    },
+    {
+      "id": "12012-AIRP2",
+      "name": "Apple AirPods Pro (2nd Gen)",
+      "availableStores": "Shoprite",
+      "nearestDistance": 1.7,
+      "image": "/images/products/airpodspro.jpg",
+      "category": "Accessories",
+      "price": 150000
+    },
+    {
+      "id": "13013-JBLCHG5",
+      "name": "JBL Charge 5 Bluetooth Speaker",
+      "availableStores": "SPAR Nigeria, Shoprite",
+      "nearestDistance": 3.1,
+      "image": "/images/products/jblcharge5.jpg",
+      "category": "Accessories",
+      "price": 85000
+    },
+    {
+      "id": "14014-GSHOCK",
+      "name": "G-Shock Men's Watch",
+      "availableStores": "Next Cash and Carry",
+      "nearestDistance": 4.5,
+      "image": "/images/products/gshockwatch.jpg",
+      "category": "Fashion",
+      "price": 60000
+    },
+    {
+      "id": "15015-SMNFRG",
+      "name": "Samsung Refrigerator 300L",
+      "availableStores": "SPAR Nigeria",
+      "nearestDistance": 3.9,
+      "image": "/images/products/samsungfridge.jpg",
+      "category": "Home Appliances",
+      "price": 200000
+    },
+    {
+      "id": "16016-LGCW",
+      "name": "LG Washing Machine",
+      "availableStores": "Shoprite",
+      "nearestDistance": 3.7,
+      "image": "/images/products/lgwashingmachine.jpg",
+      "category": "Home Appliances",
+      "price": 180000
+    },
+    {
+      "id": "17017-DELLMON",
+      "name": "Dell UltraSharp 27 Monitor",
+      "availableStores": "Next Cash and Carry",
+      "nearestDistance": 4.2,
+      "image": "/images/products/dellmonitor.jpg",
+      "category": "Computers",
+      "price": 190000
+    },
+    {
+      "id": "18018-ASUSTUF",
+      "name": "ASUS TUF Gaming Laptop",
+      "availableStores": "Slot System Limited",
+      "nearestDistance": 2.6,
+      "image": "/images/products/asustuf.jpg",
+      "category": "Gaming",
+      "price": 1200000
+    },
+    {
+      "id": "19019-BOSE700",
+      "name": "Bose 700 Noise Cancelling Headphones",
+      "availableStores": "SPAR Nigeria",
+      "nearestDistance": 3.5,
+      "image": "/images/products/bose700.jpg",
+      "category": "Accessories",
+      "price": 180000
+    },
+    {
+      "id": "20020-IPD10",
+      "name": "Apple iPad 10th Gen",
+      "availableStores": "Slot System Limited, Shoprite",
+      "nearestDistance": 2.8,
+      "image": "/images/products/appleipad.jpg",
+      "category": "Electronics",
+      "price": 450000
+    },
+    {
+      "id": "21021-CANONM50",
+      "name": "Canon EOS M50 Camera",
+      "availableStores": "SPAR Nigeria",
+      "nearestDistance": 3.4,
+      "image": "/images/products/canoneosm50.jpg",
+      "category": "Photography",
+      "price": 300000
+    },
+    {
+      "id": "22022-NKSB700",
+      "name": "Nikon SB-700 Speedlight",
+      "availableStores": "Shoprite",
+      "nearestDistance": 3.6,
+      "image": "/images/products/nikonsb700.jpg",
+      "category": "Photography",
+      "price": 120000
+    },
+    {
+      "id": "23023-TWSTEW",
+      "name": "Tefal Non-Stick Cookware Set",
+      "availableStores": "Next Cash and Carry",
+      "nearestDistance": 4.1,
+      "image": "/images/products/tefalcookware.jpg",
+      "category": "Home & Kitchen",
+      "price": 95000
+    },
+    {
+      "id": "24024-PHOENXT",
+      "name": "Phoenix Inverter 3.5KVA",
+      "availableStores": "SPAR Nigeria",
+      "nearestDistance": 5.0,
+      "image": "/images/products/phoenixinverter.jpg",
+      "category": "Electronics",
+      "price": 300000
+    },
+    {
+      "id": "25025-LGTV75",
+      "name": "LG 75\" UHD Smart TV",
+      "availableStores": "Shoprite, Next Cash and Carry",
+      "nearestDistance": 2.9,
+      "image": "/images/products/lg75tv.jpg",
+      "category": "Electronics",
+      "price": 1200000
+    },
+    {
+      "id": "26026-SAMTAB8",
+      "name": "Samsung Galaxy Tab S8",
+      "availableStores": "Slot System Limited",
+      "nearestDistance": 3.8,
+      "image": "/images/products/samsungtabs8.jpg",
+      "category": "Electronics",
+      "price": 650000
+    },
+    {
+      "id": "27027-POSHP",
+      "name": "Polystar Home Theatre System",
+      "availableStores": "SPAR Nigeria, Next Cash and Carry",
+      "nearestDistance": 4.5,
+      "image": "/images/products/polystarhometheatre.jpg",
+      "category": "Home Appliances",
+      "price": 300000
+    },
+    {
+      "id": "28028-APPLEWR",
+      "name": "Apple Watch Series 9",
+      "availableStores": "Shoprite",
+      "nearestDistance": 3.0,
+      "image": "/images/products/applewatchseries9.jpg",
+      "category": "Wearable Tech",
+      "price": 250000
+    },
+    {
+      "id": "29029-GOOGCH",
+      "name": "Google Chromecast Ultra",
+      "availableStores": "SPAR Nigeria",
+      "nearestDistance": 2.5,
+      "image": "/images/products/chromecastultra.jpg",
+      "category": "Accessories",
+      "price": 50000
+    },
+    {
+      "id": "30030-SONYCM",
+      "name": "Sony Compact Camera ZV-1",
+      "availableStores": "Shoprite, SPAR Nigeria",
+      "nearestDistance": 3.4,
+      "image": "/images/products/sonyzv1camera.jpg",
+      "category": "Photography",
+      "price": 350000
+    },
+    {
+      "id": "31031-HOMGEN",
+      "name": "Honda 5KVA Generator",
+      "availableStores": "Next Cash and Carry",
+      "nearestDistance": 5.0,
+      "image": "/images/products/hondagenerator.jpg",
+      "category": "Electronics",
+      "price": 450000
+    },
+    {
+      "id": "32032-TUFFGMR",
+      "name": "ASUS TUF Gaming Router",
+      "availableStores": "Slot System Limited",
+      "nearestDistance": 3.3,
+      "image": "/images/products/tufgamingrouter.jpg",
+      "category": "Networking",
+      "price": 120000
+    },
+    {
+      "id": "33033-DELLPRT",
+      "name": "Dell Laser Printer",
+      "availableStores": "SPAR Nigeria",
+      "nearestDistance": 3.1,
+      "image": "/images/products/dellprinter.jpg",
+      "category": "Office Equipment",
+      "price": 250000
+    },
+    {
+      "id": "34034-LNCY50",
+      "name": "Lenovo Yoga 50",
+      "availableStores": "Shoprite",
+      "nearestDistance": 4.6,
+      "image": "/images/products/lenovoyoga50.jpg",
+      "category": "Computers",
+      "price": 1100000
+    },
+    {
+      "id": "35035-FOCNCL",
+      "name": "Focusrite Scarlett Audio Interface",
+      "availableStores": "Slot System Limited",
+      "nearestDistance": 2.9,
+      "image": "/images/products/focusritescarlett.jpg",
+      "category": "Music Equipment",
+      "price": 170000
+    },
+    {
+      "id": "36036-TURKEYSO",
+      "name": "Turkey Sofa Set 5-Seater",
+      "availableStores": "Next Cash and Carry",
+      "nearestDistance": 5.0,
+      "image": "/images/products/turkeysofa.jpg",
+      "category": "Home Furniture",
+      "price": 500000
+    },
+    {
+      "id": "37037-GALHDCM",
+      "name": "Galaxy HD Webcam",
+      "availableStores": "SPAR Nigeria",
+      "nearestDistance": 3.7,
+      "image": "/images/products/galaxywebcam.jpg",
+      "category": "Accessories",
+      "price": 35000
+    },
+    {
+      "id": "38038-GAMECH",
+      "name": "Game Chair Ergonomic",
+      "availableStores": "Slot System Limited, Shoprite",
+      "nearestDistance": 4.0,
+      "image": "/images/products/gamechair.jpg",
+      "category": "Furniture",
+      "price": 180000
+    },
+    {
+      "id": "39039-LGAC1",
+      "name": "LG 1.5HP Air Conditioner",
+      "availableStores": "Shoprite, SPAR Nigeria",
+      "nearestDistance": 2.3,
+      "image": "/images/products/lgac.jpg",
+      "category": "Home Appliances",
+      "price": 200000
+    },
+    {
+      "id": "40040-SMFRDG",
+      "name": "Samsung Double Door Fridge",
+      "availableStores": "Next Cash and Carry",
+      "nearestDistance": 3.6,
+      "image": "/images/products/samsungdoublefridge.jpg",
+      "category": "Home Appliances",
+      "price": 300000
+    },
+    {
+      "id": "41041-CANPRNT",
+      "name": "Canon Multi-function Printer",
+      "availableStores": "Slot System Limited",
+      "nearestDistance": 3.4,
+      "image": "/images/products/canonprinter.jpg",
+      "category": "Office Equipment",
+      "price": 150000
+    },
+    {
+      "id": "42042-PWPKGS",
+      "name": "Power Bank 20,000mAh",
+      "availableStores": "SPAR Nigeria, Next Cash and Carry",
+      "nearestDistance": 4.2,
+      "image": "/images/products/powerbank.jpg",
+      "category": "Accessories",
+      "price": 12000
+    },
+    {
+      "id": "43043-SSTVRK",
+      "name": "Samsung Sound Tower 150W",
+      "availableStores": "Shoprite",
+      "nearestDistance": 2.8,
+      "image": "/images/products/soundsystem.jpg",
+      "category": "Accessories",
+      "price": 80000
+    },
+    {
+      "id": "44044-HPGAMLP",
+      "name": "HP Omen Gaming Laptop",
+      "availableStores": "Slot System Limited",
+      "nearestDistance": 4.0,
+      "image": "/images/products/omenlaptop.jpg",
+      "category": "Computers",
+      "price": 1400000
+    },
+    {
+      "id": "45045-SAMSMP",
+      "name": "Samsung Galaxy Smart Tag",
+      "availableStores": "SPAR Nigeria",
+      "nearestDistance": 2.6,
+      "image": "/images/products/smarttag.jpg",
+      "category": "Accessories",
+      "price": 35000
+    },
+    {
+      "id": "46046-BOSPTS",
+      "name": "Bose Portable Speaker",
+      "availableStores": "Shoprite",
+      "nearestDistance": 3.2,
+      "image": "/images/products/bosespeaker.jpg",
+      "category": "Accessories",
+      "price": 100000
+    },
+    {
+      "id": "47047-ASLGMR",
+      "name": "Asus Gaming Monitor 4K",
+      "availableStores": "Next Cash and Carry",
+      "nearestDistance": 5.0,
+      "image": "/images/products/asusgamingmonitor.jpg",
+      "category": "Computers",
+      "price": 250000
+    },
+    {
+      "id": "48048-KNXTHR",
+      "name": "Kenwood Toaster",
+      "availableStores": "SPAR Nigeria, Shoprite",
+      "nearestDistance": 2.9,
+      "image": "/images/products/kenwoodtoaster.jpg",
+      "category": "Home Appliances",
+      "price": 25000
+    },
+    {
+      "id": "49049-BTLMXP",
+      "name": "Blender Mixer Professional",
+      "availableStores": "Shoprite",
+      "nearestDistance": 4.5,
+      "image": "/images/products/blender.jpg",
+      "category": "Home Appliances",
+      "price": 80000
+    },
+    {
+      "id": "50050-BRMICR",
+      "name": "Breville Microwave Oven",
+      "availableStores": "SPAR Nigeria, Slot System Limited",
+      "nearestDistance": 3.8,
+      "image": "/images/products/microwave.jpg",
+      "category": "Home Appliances",
+      "price": 60000
+    }
+  ]
+}

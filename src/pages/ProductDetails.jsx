@@ -1,5 +1,6 @@
 import React from "react";
 import { MapPin, Store, Clock, Phone, ExternalLink } from "lucide-react";
+import { useParams } from "react-router-dom";
 
 const STORES = [
   {
@@ -28,7 +29,17 @@ const STORES = [
   },
 ];
 
-export function ProductDetails() {
+export function ProductDetails({ allProducts }) {
+  const { id } = useParams();
+  // console.log(id);
+
+  const singleProduct = allProducts.filter((product) => product.id === id);
+  console.log(singleProduct);
+
+  const productImage = singleProduct.length ? singleProduct[0].image : "";
+  const productName = singleProduct.length ? singleProduct[0].name : "";
+  const productAmount = singleProduct.length ? singleProduct[0].price : "";
+
   return (
     <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="grid lg:grid-cols-2 gap-8">
@@ -36,8 +47,9 @@ export function ProductDetails() {
         <div className="space-y-4">
           <div className="aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1586201375761-83865001e31c"
-              alt="Product"
+              //change the image depending on the url params.id of the page
+              src={productImage}
+              alt={productName}
               className="w-full h-full object-center object-cover"
             />
           </div>
@@ -51,7 +63,7 @@ export function ProductDetails() {
                   src={`https://images.unsplash.com/photo-${
                     i + 700
                   }?auto=format&fit=crop&w=200`}
-                  alt="Product thumbnail"
+                  alt="Views"
                   className="w-full h-full object-center object-cover"
                 />
               </button>
@@ -63,9 +75,9 @@ export function ProductDetails() {
         <div className="space-y-6">
           <div>
             <h1 className="text-3xl font-bold text-gray-900 mb-2">
-              Golden Penny Premium Rice
+              {productName}
             </h1>
-            <p className="text-2xl font-bold text-gray-900">₦25,000</p>
+            <p className="text-2xl font-bold text-gray-900">₦{productAmount}</p>
           </div>
 
           <div className="border-t border-b border-gray-200 py-6">
