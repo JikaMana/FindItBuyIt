@@ -1,5 +1,13 @@
 import React from "react";
-import { MapPin, Settings, Bell, History } from "lucide-react";
+import {
+  MapPin,
+  Settings,
+  Bell,
+  History,
+  TrashIcon,
+  PlusIcon,
+  Search,
+} from "lucide-react";
 
 export function UserProfile() {
   return (
@@ -10,10 +18,10 @@ export function UserProfile() {
           <div className="bg-white rounded-lg shadow-sm p-6 space-y-6">
             <div className="text-center">
               <div className="w-24 h-24 rounded-full bg-indigo-100 mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold text-indigo-600">JD</span>
+                <span className="text-2xl font-bold text-indigo-600">JM</span>
               </div>
-              <h2 className="text-xl font-bold text-gray-900">John Doe</h2>
-              <p className="text-gray-600">john.doe@example.com</p>
+              <h2 className="text-xl font-bold text-gray-900">Jika Mana</h2>
+              <p className="text-gray-600">jikamana2000@gmail.com</p>
             </div>
             <nav className="space-y-2">
               <button className="w-full flex items-center space-x-3 px-4 py-2 text-gray-700 rounded-md bg-gray-50">
@@ -54,11 +62,11 @@ export function UserProfile() {
                       {location === 1
                         ? "Home"
                         : location === 2
-                        ? "Work"
-                        : "Gym"}
+                        ? "School"
+                        : "Other"}
                     </h3>
                     <p className="text-sm text-gray-600">
-                      123 Main St, New York, NY 10001
+                      Housing Estate, Oyigbo, Rivers state
                     </p>
                   </div>
                   <div className="flex space-x-2">
@@ -77,38 +85,6 @@ export function UserProfile() {
                   <span>Add New Location</span>
                 </div>
               </button>
-            </div>
-          </section>
-
-          {/* Recent Searches */}
-          <section className="bg-white rounded-lg shadow-sm p-6">
-            <h2 className="text-xl font-bold text-gray-900 mb-6">
-              Recent Searches
-            </h2>
-            <div className="space-y-4">
-              {[1, 2, 3, 4].map((search) => (
-                <div
-                  key={search}
-                  className="flex items-center justify-between p-4 border border-gray-200 rounded-lg"
-                >
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gray-100 rounded-md flex items-center justify-center">
-                      <Search className="w-6 h-6 text-gray-600" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-900">
-                        Wireless Headphones
-                      </h3>
-                      <p className="text-sm text-gray-600">
-                        Searched 2 days ago • 5 mile radius
-                      </p>
-                    </div>
-                  </div>
-                  <button className="text-indigo-600 hover:text-indigo-500">
-                    Search Again
-                  </button>
-                </div>
-              ))}
             </div>
           </section>
         </div>

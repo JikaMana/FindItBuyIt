@@ -5,8 +5,7 @@ import {
   Store,
   Grid,
   Tag,
-  Search,
-  ShoppingCart,
+  Heart,
   User,
   HelpCircle,
   Menu,
@@ -22,7 +21,6 @@ const NAV_ITEMS = [
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
-  const [currentPage, setCurrentPage] = useState("Home");
   const location = useLocation();
 
   const getCurrentPage = () => {
@@ -33,6 +31,12 @@ export function Navigation() {
         return "categories";
       case location.pathname.startsWith("/deals"):
         return "deals";
+      case location.pathname.startsWith("/recents"):
+        return "recents";
+      case location.pathname.startsWith("/help"):
+        return "help";
+      case location.pathname.startsWith("/profile"):
+        return "profile";
       case location.pathname === "/":
         return "home";
       default:
@@ -68,25 +72,26 @@ export function Navigation() {
           {/* Right Navigation Items */}
           <div className="hidden md:flex items-center space-x-6">
             <Link
-              to="/cart"
-              className="flex items-center text-gray-700 hover:text-green-600"
+              to="/recents"
+              className={`flex items-center text-gray-700 hover:text-green-600 ${
+                getCurrentPage() === "recents" ? "text-green-600" : ""
+              }`}
             >
-              <div className="relative">
-                <ShoppingCart className="w-6 h-6" />
-                <span className="absolute -top-2 -right-2 bg-green-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                  3
-                </span>
-              </div>
+              <Heart className="w-6 h-6" />
             </Link>
             <Link
               to="/profile"
-              className="flex items-center text-gray-700 hover:text-green-600"
+              className={`flex items-center text-gray-700 hover:text-green-600 ${
+                getCurrentPage() === "profile" ? "text-green-600" : ""
+              }`}
             >
               <User className="w-6 h-6" />
             </Link>
             <Link
               to="/help"
-              className="flex items-center text-gray-700 hover:text-green-600"
+              className={`flex items-center text-gray-700 hover:text-green-600 ${
+                getCurrentPage() === "help" ? "text-green-600" : ""
+              }`}
             >
               <HelpCircle className="w-6 h-6" />
             </Link>
@@ -128,7 +133,7 @@ export function Navigation() {
               className="flex items-center text-gray-700 hover:text-green-600 px-3 py-2 text-base font-medium"
               onClick={() => setIsOpen(false)}
             >
-              <ShoppingCart className="w-5 h-5 mr-2" />
+              <Heart className="w-5 h-5 mr-2" />
               Cart
             </Link>
             <Link

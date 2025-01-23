@@ -9,9 +9,9 @@ import { UserProfile } from "./pages/UserProfile";
 import { StoresPage } from "./pages/StoresPage";
 import useProducts from "./hooks/useProducts";
 import { StoreDetailsPage } from "./pages/StoreDetails";
-// import { CategoriesPage } from './pages/CategoriesPage';
-// import { DealsPage } from './pages/DealsPage';
-// import { CartPage } from './pages/CartPage';
+import { CategoriesPage } from "./pages/CategoriesPage";
+import { DealsPage } from "./pages/DealsPage";
+import RecentAndSaved from "./pages/RecentAndSaved";
 // import { HelpPage } from './pages/HelpPage';
 
 function App() {
@@ -39,6 +39,9 @@ function App() {
           <Route path="/profile" element={<UserProfile />} />
           <Route path="/stores" element={<StoresPage />} />
           <Route path="/stores/:id" element={<StoreDetailsPage />} />
+          <Route path="/categories" element={<CategoriesPage />} />
+          <Route path="/deals" element={<DealsPage />} />
+          <Route path="/recents" element={<RecentAndSaved />} />
         </Routes>
       </Layout>
     </Router>
@@ -47,8 +50,7 @@ function App() {
 
 export default App;
 {
-  /* <Route path="/categories" element={<CategoriesPage />} />
-          <Route path="/deals" element={<DealsPage />} />
-          <Route path="/cart" element={<CartPage />} />
+  /* 
+        
           <Route path="/help" element={<HelpPage />} /> */
 }

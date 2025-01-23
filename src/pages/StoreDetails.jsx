@@ -307,7 +307,7 @@ export function StoreDetailsPage() {
 
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Store Hours</h3>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 gap-4 md:gap-8">
                     {Object.entries(STORE_DATA.hours).map(([day, hours]) => (
                       <div key={day} className="flex justify-between">
                         <span className="capitalize text-gray-600">{day}</span>
