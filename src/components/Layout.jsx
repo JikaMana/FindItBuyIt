@@ -11,9 +11,6 @@ export function Layout({ children }) {
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 sm:h-14">
             <div className="flex items-center">
-              <button className="sm:hidden p-2" aria-label={"Menu"}>
-                <Menu className="w-6 h-6 text-gray-700" />
-              </button>
               <Link to="/" className="flex items-center space-x-2">
                 <ShoppingBag className="w-8 h-8 text-green-600" />
                 <span className="text-xl font-bold text-gray-900">
