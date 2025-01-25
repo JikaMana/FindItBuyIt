@@ -7,6 +7,7 @@ import jabiLakeMall from "../images/stores/jabi-lake-mall.png";
 import shopriteWarri from "../images/stores/shoprite-warri.png";
 import abuadMall from "../images/stores/abuad-shopping-mall.png";
 import marketSquare from "../images/stores/market-square.png";
+import { Search } from "lucide-react";
 
 const SAMPLE_STORES = [
   {
@@ -103,6 +104,16 @@ export function StoresPage() {
     <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="space-y-6">
         <h1 className="text-2xl font-bold text-gray-900">Stores Near You</h1>
+        <div className="hidden sm:flex flex-1 max-w-md">
+          <div className="w-full relative">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+            <input
+              type="search"
+              placeholder="Search for available stores"
+              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            />
+          </div>
+        </div>
 
         <LocationSelector />
 
