@@ -7,6 +7,7 @@ import {
   TrashIcon,
   PlusIcon,
   Search,
+  Pencil,
 } from "lucide-react";
 
 export function UserProfile() {
@@ -71,7 +72,7 @@ export function UserProfile() {
                   </div>
                   <div className="flex space-x-2">
                     <button className="p-2 text-gray-600 hover:text-indigo-600">
-                      <Settings className="w-5 h-5" />
+                      <Pencil className="w-5 h-5" />
                     </button>
                     <button className="p-2 text-gray-600 hover:text-red-600">
                       <TrashIcon className="w-5 h-5" />

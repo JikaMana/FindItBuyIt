@@ -123,6 +123,7 @@ export function Layout({ children }) {
             <p className="text-sm text-gray-500">
               Currently available in Nigeria
             </p>
+            <p className="text-sm text-gray-500"></p>
           </div>
         </div>
       </footer>
