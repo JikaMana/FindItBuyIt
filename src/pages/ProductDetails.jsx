@@ -53,7 +53,7 @@ export function ProductDetails({ allProducts }) {
               className="w-full h-full object-center object-cover"
             />
           </div>
-          <div className="grid grid-cols-4 gap-4">
+          {/* <div className="grid grid-cols-4 gap-4">
             {[...Array(4)].map((_, i) => (
               <button
                 key={i}
@@ -68,6 +68,15 @@ export function ProductDetails({ allProducts }) {
                 />
               </button>
             ))}
+          </div> */}
+          <div>
+            <h1 className="mt-12">
+              <strong>
+                **Integrate map to located the store if a customer clicms on the
+                get direction <br /> and sekcts a store, let the new page have
+                map, phone number, website, address and more**
+              </strong>
+            </h1>
           </div>
         </div>
 

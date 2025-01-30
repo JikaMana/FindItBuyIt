@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Search, ShoppingBag, User, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
 import Logo from "/images/FindItBuyItLogo.png";
@@ -120,10 +120,11 @@ export function Layout({ children }) {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-200">
-            <p className="text-sm text-gray-500">
-              Currently available in Nigeria
+            <p className="text-gray-500">Currently available in Nigeria</p>
+            <p className="text-gray-500 font-medium text-center">
+              &copy; <span>{new Date().getFullYear()}</span> FindItBuyIt. All
+              rights reserved.
             </p>
-            <p className="text-sm text-gray-500"></p>
           </div>
         </div>
       </footer>

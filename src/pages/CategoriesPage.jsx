@@ -119,7 +119,7 @@ export function CategoriesPage() {
         <h2 className="text-2xl font-bold text-gray-900 mb-6">
           All Categories
         </h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {CATEGORIES.map((category) => (
             <Link
               key={category.name}
@@ -129,7 +129,7 @@ export function CategoriesPage() {
               <div
                 className={`w-16 h-16 rounded-full ${category.color} flex items-center justify-center mb-4`}
               >
-                <category.icon className="w-8 h-8" />
+                <category.icon className=" sm:w-8 sm:h-8" />
               </div>
               <h3 className="text-gray-900 font-medium text-center">
                 {category.name}

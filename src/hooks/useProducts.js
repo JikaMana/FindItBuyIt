@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+// import url from "../../_data/products/product.json"
 
 const useProducts = () => {
   const [featuredProducts, setFeaturedProducts] = useState([]);
@@ -9,7 +10,8 @@ const useProducts = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const API_URL = "http://localhost:4000";
+      // const API_URL = "http://localhost:4000";
+      const API_URL = "../../_data/products/product.json";
 
       try {
         const [FEATURED_PRODUCTS, ALL_PRODUCTS] = await Promise.all([
@@ -35,6 +37,7 @@ const useProducts = () => {
 
     fetchProducts();
   }, []);
+  console.log(featuredProducts);
 
   return { allProducts, featuredProducts, loading, error };
 };
