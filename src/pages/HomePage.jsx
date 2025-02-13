@@ -2,10 +2,6 @@ import React from "react";
 import { Search, MapPin, TrendingUp, Store } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroBanner from "/images/herobanner.webp";
-// import dellLaptop from "../images/products/dell-xps-15.png";
-// import samsungTV from "../images/products/samsung-tv.png";
-// import nikeAirmax from "../images/products/nike-airmax-270.png";
-// import iphone16pro from "../images/products/iphone16pro.png";
 
 const FEATURED_STORES = [
   { name: "Shoprite", initial: "shoprite" },
@@ -16,24 +12,30 @@ const FEATURED_STORES = [
     initial: "market-square",
   },
 ];
-
 export function HomePage({ featuredProducts }) {
   return (
     <div className="space-y-16">
-      {/* Hero Section */}
       <section className="relative bg-green-600 py-32 sm:py-48">
-        <div className="absolute inset-0 overflow-hidden">
+        {/* <div className="absolute inset-0 overflow-hidden">
           <img
             src={heroBanner}
             alt="Shopping background"
             className="w-full h-full object-cover opacity-10"
           />
+        </div> */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+          <img
+            src={heroBanner}
+            alt="Modern shopping experience"
+            className="w-full h-full object-cover object-[center_30%] "
+          />
         </div>
         <div className="relative max-w-3xl mx-auto text-center px-4">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-8">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold w-full  mb-8 bg-gradient-to-r from-green-800 to-green-100 bg-clip-text text-transparent">
             Find Products in Supermarkets Near you
           </h1>
-          <p className="text-xl text-green-100 mb-8">
+          <p className="text-xl sm:text-2xl md:text-3xl text-green-100 mb-4 sm:mb-6 md:mb-8">
             Locate items in stores across your city
           </p>
           <div className="max-w-2xl mx-auto">
@@ -44,7 +46,7 @@ export function HomePage({ featuredProducts }) {
                 placeholder="Search for products in supermarkets near you..."
                 className="w-full pl-14 pr-4 py-4 rounded-full text-lg focus:outline-none focus:ring-2 focus:ring-green-300"
               />
-              <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-400 transition-colors">
+              <button className=" hover:scale-105 transition-transform duration-300 ease-out absolute right-2 top-1/2 transform -translate-y-1/2 bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-400 transition-colors">
                 Search
               </button>
             </div>
@@ -133,7 +135,7 @@ export function HomePage({ featuredProducts }) {
                 <img
                   src={product.image}
                   alt="Product"
-                  className="w-full h-48 object-cover rounded-t-lg"
+                  className="w-full h-48 object-contain rounded-t-lg"
                 />
                 <div className="p-4">
                   <h3 className="font-semibold text-gray-900 mb-1">

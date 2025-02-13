@@ -31,7 +31,6 @@ const STORES = [
 
 export function ProductDetails({ allProducts }) {
   const { id } = useParams();
-  // console.log(id);
 
   const singleProduct = allProducts.filter((product) => product.id === id);
   console.log(singleProduct);
@@ -39,6 +38,8 @@ export function ProductDetails({ allProducts }) {
   const productImage = singleProduct.length ? singleProduct[0].image : "";
   const productName = singleProduct.length ? singleProduct[0].name : "";
   const productAmount = singleProduct.length ? singleProduct[0].price : "";
+
+  console.log(singleProduct[0].image);
 
   return (
     <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -72,8 +73,8 @@ export function ProductDetails({ allProducts }) {
           <div>
             <h1 className="mt-12">
               <strong>
-                **Integrate map to located the store if a customer clicms on the
-                get direction <br /> and sekcts a store, let the new page have
+                **Integrate map to located the store if a customer clicks on the
+                get direction <br /> and selects a store, let the new page have
                 map, phone number, website, address and more**
               </strong>
             </h1>

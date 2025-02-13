@@ -14,7 +14,7 @@ import {
 
 const NAV_ITEMS = [
   { icon: Home, label: "Home", path: "/" },
-  { icon: Store, label: "Stores", path: "/stores" },
+  { icon: Store, label: "Stores", path: "/store" },
   { icon: Grid, label: "Categories", path: "/categories" },
   { icon: Tag, label: "Deals", path: "/deals" },
 ];
@@ -25,8 +25,8 @@ export function Navigation() {
 
   const getCurrentPage = () => {
     switch (true) {
-      case location.pathname.startsWith("/stores"):
-        return "stores";
+      case location.pathname.startsWith("/store"):
+        return "store";
       case location.pathname.startsWith("/categories"):
         return "categories";
       case location.pathname.startsWith("/deals"):

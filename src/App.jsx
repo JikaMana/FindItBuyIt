@@ -16,6 +16,7 @@ import RecentAndSaved from "./pages/RecentAndSaved";
 
 function App() {
   const { allProducts, featuredProducts, loading, error } = useProducts();
+  // console.log(featuredProducts);
 
   return (
     <Router>
@@ -31,14 +32,14 @@ function App() {
             path="/product/:id"
             element={
               <ProductDetails
-                featuredProducts={featuredProducts}
+                // featuredProducts={featuredProducts}
                 allProducts={allProducts}
               />
             }
           />
           <Route path="/profile" element={<UserProfile />} />
-          <Route path="/stores" element={<StoresPage />} />
-          <Route path="/stores/:id" element={<StoreDetailsPage />} />
+          <Route path="/store" element={<StoresPage />} />
+          <Route path="/store/:id" element={<StoreDetailsPage />} />
           <Route path="/categories" element={<CategoriesPage />} />
           <Route path="/deals" element={<DealsPage />} />
           <Route path="/recents" element={<RecentAndSaved />} />
