@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import heroBanner from "/images/herobanner.webp";
 
 const FEATURED_STORES = [
-  { name: "Shoprite", initial: "shoprite" },
-  { name: "SPAR", initial: "spar" },
+  { name: "Al Baik", initial: "albaik" },
+  { name: "KFC", initial: "kfc" },
   { name: "Next Cash and Carry", initial: "next" },
   {
     name: "Market Square",
@@ -55,7 +55,7 @@ export function HomePage({ featuredProducts }) {
       </section>
 
       {/* Featured Stores Section */}
-      <section className="py-16">
+      <section className="">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
             Our Partner Stores
@@ -63,7 +63,7 @@ export function HomePage({ featuredProducts }) {
           <div className="grid md:grid-cols-4 gap-8">
             {FEATURED_STORES.map((store, index) => (
               <Link
-                to={`/store/${store.initial}`}
+                to={`/stores/${store.initial}`}
                 key={index}
                 className="text-center"
               >
@@ -79,7 +79,7 @@ export function HomePage({ featuredProducts }) {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-16 bg-gray-50">
+      <section className=" bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
             How It Works

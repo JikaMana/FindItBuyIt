@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   Home,
@@ -14,7 +14,7 @@ import {
 
 const NAV_ITEMS = [
   { icon: Home, label: "Home", path: "/" },
-  { icon: Store, label: "Stores", path: "/store" },
+  { icon: Store, label: "Stores", path: "/stores" },
   { icon: Grid, label: "Categories", path: "/categories" },
   { icon: Tag, label: "Deals", path: "/deals" },
 ];
@@ -22,22 +22,23 @@ const NAV_ITEMS = [
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const path = location.pathname;
 
   const getCurrentPage = () => {
     switch (true) {
-      case location.pathname.startsWith("/store"):
-        return "store";
-      case location.pathname.startsWith("/categories"):
+      case path.startsWith("/stores"):
+        return "stores";
+      case path.startsWith("/categories"):
         return "categories";
-      case location.pathname.startsWith("/deals"):
+      case path.startsWith("/deals"):
         return "deals";
-      case location.pathname.startsWith("/recents"):
+      case path.startsWith("/recents"):
         return "recents";
-      case location.pathname.startsWith("/help"):
+      case path.startsWith("/help"):
         return "help";
-      case location.pathname.startsWith("/profile"):
+      case path.startsWith("/profile"):
         return "profile";
-      case location.pathname === "/":
+      case path === "/":
         return "home";
       default:
         return "unknown";
@@ -45,7 +46,6 @@ export function Navigation() {
   };
 
   getCurrentPage();
-  // alert(getCurrentPage());
 
   return (
     <nav className="bg-white shadow-sm">

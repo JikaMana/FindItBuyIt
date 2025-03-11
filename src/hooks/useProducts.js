@@ -35,7 +35,6 @@ const useProducts = () => {
 
     fetchProducts();
   }, []);
-  console.log(featuredProducts);
 
   return { allProducts, featuredProducts, loading, error };
 };
