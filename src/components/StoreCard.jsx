@@ -7,6 +7,7 @@ export function StoreCard({
   name,
   image,
   rating,
+  initial,
   reviews,
   address,
   distance,
@@ -15,7 +16,7 @@ export function StoreCard({
 }) {
   return (
     <Link
-      to={`/stores/${id}`}
+      to={`/stores/${initial}`}
       className="relative pb-8 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
     >
       <div className="relative h-48">

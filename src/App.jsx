@@ -8,10 +8,11 @@ import { ProductDetails } from "./pages/ProductDetails";
 import { UserProfile } from "./pages/UserProfile";
 import { StoresPage } from "./pages/StoresPage";
 import useProducts from "./hooks/useProducts";
-import { StoreDetailsPage } from "./pages/StoreDetails";
+import { StoreDetailsPage } from "./pages/StoreDetailsPage";
 import { CategoriesPage } from "./pages/CategoriesPage";
 import { DealsPage } from "./pages/DealsPage";
 import RecentAndSaved from "./pages/RecentAndSaved";
+import HelpPage from "./pages/HelpPage";
 // import { HelpPage } from './pages/HelpPage';
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route path="/categories" element={<CategoriesPage />} />
           <Route path="/deals" element={<DealsPage />} />
           <Route path="/recents" element={<RecentAndSaved />} />
+          <Route path="/help" element={<HelpPage />} /> */
         </Routes>
       </Layout>
     </Router>
@@ -50,8 +52,3 @@ function App() {
 }
 
 export default App;
-{
-  /* 
-        
-          <Route path="/help" element={<HelpPage />} /> */
-}

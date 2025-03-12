@@ -123,6 +123,7 @@ export function StoresPage() {
               key={store.id}
               id={store.id}
               name={store.name}
+              initial={store.initial}
               image={store.image}
               rating={store.rating}
               reviews={store.reviews}

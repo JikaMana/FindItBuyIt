@@ -31,7 +31,7 @@ const RecentAndSaved = () => {
                 </p>
               </div>
             </div>
-            <button className="text-indigo-600 hover:text-indigo-500">
+            <button className="text-green-800 hover:text-green-700">
               Search Again
             </button>
           </div>

@@ -36,7 +36,7 @@ const CATEGORIES = [
   {
     name: "Gifts & Lifestyle",
     icon: Gift,
-    color: "bg-indigo-100 text-indigo-600",
+    color: "bg-green-300 text-green-800",
   },
   {
     name: "Sports & Fitness",
