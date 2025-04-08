@@ -6,7 +6,7 @@
 
 Experience the platform firsthand by visiting our live site:
 
-- [FindItBuyIt](http://finditbuyit.netlify.app/)
+- [FindItBuyIt](https://app-finditbuyit.netlify.app/)
 
 ## Features
 
@@ -53,7 +53,7 @@ To set up the project locally, follow these steps:
    ```
 
 5. **Access the Application**:
-   Open your browser and go to `http://localhost:3000` to view the application.
+   Open your browser and go to `http://localhost:5173` to view the application.
 
 ## Contributing
 
@@ -96,7 +96,7 @@ We welcome contributions to enhance FindItBuyIt. To contribute:
 
 For inquiries or feedback, please reach out:
 
-- **Email**: hello@finditbuyit.com
+- **Email**: yahayaabdullahimana@gmail.com
 - **Phone**: +234(0) 9019967427
 
 ## License
