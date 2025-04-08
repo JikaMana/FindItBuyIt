@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { LocationSelector } from "../components/LocationSelector";
 import { StoreCard } from "../components/StoreCard";
 import sparLekki from "../images/stores/spar-lekki.png";
@@ -99,7 +99,14 @@ const SAMPLE_STORES = [
     ],
   },
 ];
+
 export function StoresPage() {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  useEffect(() => {
+    console.log(searchQuery);
+  }, [searchQuery]);
+
   return (
     <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="space-y-6">
@@ -109,6 +116,8 @@ export function StoresPage() {
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
               type="search"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search for available stores"
               className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
             />
@@ -118,21 +127,25 @@ export function StoresPage() {
         <LocationSelector />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {SAMPLE_STORES.map((store) => (
-            <StoreCard
-              key={store.id}
-              id={store.id}
-              name={store.name}
-              initial={store.initial}
-              image={store.image}
-              rating={store.rating}
-              reviews={store.reviews}
-              address={store.address}
-              distance={store.distance}
-              hours={store.hours}
-              featured={store.featured}
-            />
-          ))}
+          {SAMPLE_STORES.filter((store) =>
+            store.name.toLowerCase().includes(searchQuery.toLowerCase())
+          )
+            .map((store) => (
+              <StoreCard
+                key={store.id}
+                id={store.id}
+                name={store.name}
+                initial={store.initial}
+                image={store.image}
+                rating={store.rating}
+                reviews={store.reviews}
+                address={store.address}
+                distance={store.distance}
+                hours={store.hours}
+                featured={store.featured}
+              />
+            ))
+            .filter((store) => store.name !== searchQuery)}
         </div>
       </div>
     </div>

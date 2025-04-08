@@ -155,7 +155,7 @@ export function LocationSelector() {
         <MapPin className="w-5 h-5 text-green-600" />
         <div className="flex-1 space-y-2">
           {loading ? (
-            <div className="animate-pulse h-8 bg-gray-200 rounded"></div>
+            <div className="animate-pulse max-h-6s rounded"></div>
           ) : error ? (
             <div className="text-sm text-red-600">{error}</div>
           ) : currentLocation ? (
